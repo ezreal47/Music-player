@@ -1,0 +1,26 @@
+@import 'reset';
+@import 'header';
+@import 'slider';
+@import 'navbar';
+@import 'songlist';
+@import 'rank';
+@import 'search';
+@import 'player';
+@import 'playlist';
+
+body {
+  font-family: FZLTXIHJW--GB1-0, "hiragino sans gb", "Helvetica Neue", Helvetica, STHeiTi, Arial;
+  // background: #f4f4f4;
+  background: #fff;
+ 
+}
+
+#rank-view {
+  // width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.hidden {
+  display: none;
+}

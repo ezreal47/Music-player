@@ -1,0 +1,24 @@
+#header {
+  background-color: #08d9d6;
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    color: #252a34;
+    font-size: 18px;
+    margin-left: 5px;
+    flex-grow: .5;
+    @media (min-width: 500px) {
+     text-align: center;
+    }
+  }
+  .icon-logo  {
+    fill: #dbe2ef;
+    width: 12vw;
+    @media (min-width: 500px) {
+        width: 4vw;
+        margin-right: -400px; 
+    }
+  }
+}

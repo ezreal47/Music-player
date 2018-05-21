@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Music-player</title>
+  <link rel="stylesheet" href="dist/app.css">
+</head>
+<body>
+  <header id="header">
+    <svg class="icon-logo">
+      <use xlink:href="#icon-music-note"></use>
+    </svg>
+   <h1>Music-player</h1>
+  </header>
+  <nav id="navbar">
+    <ul class="nav-list">
+      <li class="nav-item active" data-role="tab" data-view="#recommend-view">推荐</li>
+      <li class="nav-item" data-role="tab" data-view="#rank-view">排行榜</li>
+      <li class="nav-item" data-role="tab" data-view="#search-view">搜索</li>
+    </ul>
+  </nav>
+
+  <div id="view">
+    <section id="recommend-view">
+      <div id="slider">
+        <ul class="slider-tab">
+          <li class="slider-tab-item"></li>
+          <li class="slider-tab-item"></li>
+          <li class="slider-tab-item"></li>
+          <li class="slider-tab-item"></li>
+        </ul>
+      </div>
+      <div class="song-list">
+        <div>
+          <h2>推荐歌单</h2>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="rank-view" class="hidden">
+      <img src="http://p77e4v4ht.bkt.clouddn.com/rank.jpg" alt="">
+    </section>
+
+    <section id="search-view" class="hidden">
+      <div class="search-area">
+        <svg class="icon-search">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+        <label>
+          <input type="text" placeholder="搜索歌曲" id="searchSong">
+        </label>
+        <svg class="icon-clean">
+          <use xlink:href="#icon-delete"></use>
+        </svg>
+      </div>
+      <ul class="output">
+      </ul>
+      <div class="search-top">
+        <h3 class="title">热门搜索</h3>
+        <ul class="list">
+          <li>芝麻开门</li>
+          <li>娱乐天空</li>
+          <li>山外小楼夜听雨</li>
+          <li>来夜方长</li>
+          <li>我乐意</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="player">
+      <div class="player-header">
+          <svg class="out-player">
+            <use xlink:href="#icon-back1"></use>
+          </svg>
+        <div class="song-container">
+          <p class="songname"></p>
+          <p class="singer"></p>
+        </div>
+      </div>
+      <div class="lyric">
+        <div class="lines">
+          
+        </div>
+      </div>
+      <div class="pause">
+        <svg class="icon icon-play">
+          <use xlink:href="#icon-play"></use>
+        </svg>
+        <svg class="icon icon-pause">
+          <use xlink:href="#icon-pause"></use>
+        </svg>
+      </div>
+      </section>
+  </div>
+
+  <script src="//at.alicdn.com/t/font_660568_dogf6ddlhkaqncdi.js"></script>
+  <script  src="./dist/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+#slider {
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  .slider-tab {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    .item {
+      width: 3vw;
+      height: 3vw;
+      margin: 10px;
+      border-radius: 50%;
+      background: #252a34;
+      opacity: 0.5;
+      &.active {
+        background: #ff2e63;
+      }
+    }
+  }
+  
+  .slider-wrap {
+    display: flex;
+    .slider-item {
+      @media (min-width: 500px) {
+        width: 100vw; 
+      }
+      > a {
+        display: block;
+        img { 
+          width: 100%;
+        }
+      }
+    }
+  }
+}

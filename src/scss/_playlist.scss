@@ -1,0 +1,101 @@
+.playlist {
+  a {
+    text-decoration: none;
+  }
+  .pl-head {
+    height: 35vh;
+    overflow: hidden;
+    position: relative;
+    .head-bg {
+      // background-image: url(http://p77e4v4ht.bkt.clouddn.com/song-1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      filter: blur(20px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    .head-icon {
+      position: relative;
+      display: flex;
+      align-items: center;
+      z-index: 2;
+      padding: 8px;
+      .backoff {
+        @media (min-width: 500px){
+          width: 3vw;
+          height: 3vw;
+        }
+        fill: white;
+        width: 10vw;
+        height: 10vw;
+      }
+      .title {
+        font-size: 20px;
+        color: white;
+        margin-bottom: 5px;
+      }
+    }
+    .head-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-around;
+      padding-right: 20px;
+      img {
+        @media (min-width: 500px) {
+         display: none;
+        }
+        width: 40vw;
+        height: 40vw;
+        border-radius: 10px;
+      }
+      .description {
+        @media (min-width: 500px) {
+          display: none;
+        }
+        padding-top: 20px;
+        padding-left: 20px;
+        color: white;
+        width: 40vw;
+        font-size: 18px;
+      }
+    }
+  }
+  .playlist-intro {
+    padding: 15px;
+    font-size: 14px;
+    color: rgba(102, 102, 102,1);
+    .list-tags {
+      display: flex;
+      margin-bottom: 10px;
+      li {
+        border: 1px solid rgba(102, 102, 102,0.3);
+        // song 51 51 51
+        // singer: 136 136 136 
+        // 歌曲列表 102 102 102
+        // 238 239 240
+        padding: 2px 8px;
+        margin-right: 8px;
+        border-radius: 10px;
+      }
+    }
+    .u-intro {
+      margin-left: 5px;
+      margin-bottom: 10px;
+    }    
+  }
+  .songs {
+    .song-title {
+      font-size: 14px;
+      color: rgba(102, 102,102 ,1.0);
+      background: #eeeff0;
+      padding: 0 10px;
+      height: 24px;
+      line-height: 24px;
+    }
+  }
+}

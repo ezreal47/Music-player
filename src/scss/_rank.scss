@@ -1,0 +1,57 @@
+#rank-view,.songs {
+  // background: #252a34;
+  .rank-list {
+    // padding-top: 10px;
+    margin-top: 10px;
+    background: #fcfcfd;
+    .rank-item {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+      padding-bottom: 5px;
+      img {width: 100%; }
+      .rank-num {
+        margin: 0 10px;
+      }
+      .rank-content {
+        padding-bottom: 10px;
+        border-bottom: 0.1vw solid rgba(37,42,52,0.9);
+        position: relative;
+        flex: 1;
+        .songname {
+          width: 70vw;
+          font-size: 18px;
+          color: #333;
+          margin-bottom: 1px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-break: break-all;
+        }
+        .singer {
+          width: 70vw;
+          font-size: 13px;
+          color: #888;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-break: normal;
+        }
+        .play {
+           @media (min-width: 500px) {
+            width: 2vw;
+            height: 2vw;
+          } 
+          display: block;
+          width: 7vw;
+          height: 7vw;
+          fill: #333;
+          position: absolute;
+          right: 5%;
+          top: 10%;
+        }
+      }
+      &:nth-last-child(1) .rank-content{border-bottom: none}
+    }
+  }
+}
